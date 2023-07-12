@@ -6,9 +6,10 @@ import { Paginas } from "./componentes/Paginas";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
-    </div>
+      <Paginas />
+    </Router>
   );
 }
 

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,20 +15,20 @@ code {
 }
 
 .App {
-  max-width: 1550px;
   width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: auto;
   box-shadow: 0 5px 6px #08a05ca4;
   padding: 0 15px;
   box-sizing: border-box;
 }
 
-/* Header */
+/* ----- Header ----- */
 header {
   width: 97%;
+  margin: 0 1rem;
   min-height: 100px;
-  max-width: 1530px;
+  /* max-width: 1530px; */
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -99,25 +100,44 @@ header .cart span {
   background-color: crimson;
 }
 
-/* MediaQuery Header */
+/* ----- MediaQuery Header ----- */
 @media only screen and (max-width: 600px) {
   header ul {
     display: none;
   }
 }
 
-/* Lista Productos */
+/* ----- Inicio ----- */
+.inicio {
+  width: 100%;
+  margin: 0 auto;
+  padding: 9rem 1rem 0 1rem;
+}
+
+.inicio h1 {
+  font-size: 2.5rem;
+  color: #08a05c;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----- Lista Productos ----- */
 .title {
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 10rem 0 0 0;
   color: #08a05c;
+  text-align: center;
 }
 
 .lista-productos {
   padding: 5rem 0;
-  margin: 0 auto;
+  width: 97%;
+  margin: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   gap: 3rem 2rem;
   box-sizing: border-box;
 }
@@ -142,6 +162,9 @@ header .cart span {
 
 .producto__footer {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .producto__footer h1 {
@@ -164,11 +187,11 @@ header .cart span {
 }
 
 .producto .button {
-  width: 100%;
+  width: 90%;
   height: 45px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1rem 2rem;
+  gap: 1rem 2.5rem;
   padding: 0 1rem;
   margin: 1rem;
 }
@@ -178,6 +201,7 @@ header .cart span {
   outline: 0;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 .button button {
@@ -185,7 +209,6 @@ header .cart span {
   max-width: 250px;
   width: 100%;
   margin: 0 auto;
-  font-size: 1.5rem;
   color: white;
   font-weight: 600;
 }

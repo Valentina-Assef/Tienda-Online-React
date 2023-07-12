@@ -1,13 +1,13 @@
 import React from "react";
 import img01 from "../images/img01.jpg"
 
-export const Productos = () => {
+export const ListaProductos = () => {
   return (
     <> {/* Esto ayuda a que no retorne un elemento padre, solo retornara hijos */}
       <h1 className="title">Productos</h1>
       <div className="lista-productos">
         <div className="producto">
-          <a href="#">
+          <a href="/">
             <div className="item-producto">
               <img src={img01} alt=""/>
             </div>
@@ -20,12 +20,12 @@ export const Productos = () => {
           <div className="button">
             <button className="btn">Añadir al carrito</button>
             <div>
-              <a href="#" className="btn">Vista</a>
+              <a href="/" className="btn">Vista</a>
             </div>
           </div>
         </div>
         <div className="producto">
-          <a href="#">
+          <a href="/">
             <div className="item-producto">
               <img src={img01} alt=""/>
             </div>
@@ -38,12 +38,12 @@ export const Productos = () => {
           <div className="button">
             <button className="btn">Añadir al carrito</button>
             <div>
-              <a href="#" className="btn">Vista</a>
+              <a href="/" className="btn">Vista</a>
             </div>
           </div>
         </div>
         <div className="producto">
-          <a href="#">
+          <a href="/">
             <div className="item-producto">
               <img src={img01} alt=""/>
             </div>
@@ -56,12 +56,12 @@ export const Productos = () => {
           <div className="button">
             <button className="btn">Añadir al carrito</button>
             <div>
-              <a href="#" className="btn">Vista</a>
+              <a href="/" className="btn">Vista</a>
             </div>
           </div>
         </div>
         <div className="producto">
-          <a href="#">
+          <a href="/">
             <div className="item-producto">
               <img src={img01} alt=""/>
             </div>
@@ -74,7 +74,7 @@ export const Productos = () => {
           <div className="button">
             <button className="btn">Añadir al carrito</button>
             <div>
-              <a href="#" className="btn">Vista</a>
+              <a href="/" className="btn">Vista</a>
             </div>
           </div>
         </div>
